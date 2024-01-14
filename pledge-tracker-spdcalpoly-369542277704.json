@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pledge-tracker-spdcalpoly",
+  "private_key_id": "369542277704eb4b5ab8ce5b186afa07de1d82ef",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUcCuEH1GnpDN/\nMCvaqWS8pw1XzOeEhnYkvS15Q638tUT5kzddSQLUVUvP/HFsGJ2fF0uWpTAjw5Gy\nY35kFGGTtAHL/HhbX84tyK3IVx5dK73Pj02NDEHxy5msJaCeemVOf3v+Gf1k1UUf\n8ECeLcTBCJK1PEv7BsqPpcKzXD7ENsXvjYEuFhVbyke7nDES4Ejb27wBqwjO5qem\noenzF0+1UBmU0IYoZDCBRAf3Y5GCApIcQMZug1mfbsvvWr96CONZBeCb9Von6S8f\njXiNgoZ1qMzUN276BTDSuyJYDpEqan5B0jNsi1PL1bD8Mw70mC/umJgD+pfqFV4F\n0xTghTcTAgMBAAECggEAEZ/ArHRgtNS1hP69FKXq+o+tVrRkHKV/FaswI5hOzeFH\n+KCS/kU5W947rOSXkE02fmVTWwsXRFBMPQ1uBeV+9t7/Kyol3gbDtx6n9C/uD/K6\nC4cq+uGicuneNN7mRV+IGgwPgFQtpnjfBDhNVBId+Zm5ehmngArfMS2iSnkDqAlw\njqOMZz2NQ46MPZKNug6DUULn4qdmfWNWsKuQlnOAzWTpdyFkKzjXCyGQ4U8Y/FHl\nzAY/9AFZRJEwCoe2evW2igtf/8RdFH53oGXcET/OoxnpPwwgbWoX/zceghlLqrne\n/htr+zfmM5EFCVhStx5g/JqGW+hWwNDDH/t+0HqtcQKBgQDpvolLpPvM5rqGMnqs\nlw5B6IGcKRsi0/uGJv9ZqHYguc4orKxpENiPADxHm+/jyTkfpbYtwZrFAbG/Wlbu\nUkfXJ6ERoiSUvUA4aZR07uQnRhGsn9SqBVnpyIhZZajhBu8TukjfDK3PZrxc0ABK\nJPWz5zQGCPQ7ZZR8JclBXY0euQKBgQDoqk1IYSE6U6Pk8BFmgk6MfmIHGZ6tHJeZ\nSCg5p54ofVVz2PyMXx0oTyOH6JDnhbSVQytwZ+pDQfLisJ5BL3eGV6Fzn+nf4o8n\n05z9EddNfIBF9/VeeUhJMPGV5Y1kPKWqGE17DEug9BXE4F/3pE/wnJSZNhVZr2um\nXzt2kUJ+KwKBgQDC0JlhwKpVRuCjRKNWAbhSWlTcMK57Qq7aStp8gZmjAPnAkNpJ\n305/MTUMgf1YnrfLlrPWQwyZsiXRVJwrmcximJb4OWm/xlQmMGkZZJon2ZCVjckT\nw84Cua5axA4TL1JH4PUnYkvjFr9bo8j6Av/9529GsGPOtYUiS+QHZM9fkQKBgGCK\n2gqgkyMatbU3kGDSzTkq8A42KUt3w8gM0vQpg00VxLGPZivxA65IOFwaupX3Oxl8\nh7faxrAl210JIIG36obKMepCfs8xuWkzO78e+hHjCW7/Fsee18nXD0e9us/PAob0\nEqJuVatx3N6Wo/ukKK+UqWxxrqZKTgb5GTl3yPmFAoGBAIIYWX5qAgySlh8K8wvJ\nVw19DNbKe+C8ATA18VJsbwvLrvSrweGBkYG574R3ZEFk4UvDhrx8sUD3idFYQWVi\n8ggPVhAIbMvO0BIfzU8gUSA7aneIvWgqqMCJ0zaBYhYoQMj6tcnSGSOh6kxUjoc3\nwU+F07L/3cH8GRlIeKT3W6+s\n-----END PRIVATE KEY-----\n",
+  "client_email": "webmaster-service-account@pledge-tracker-spdcalpoly.iam.gserviceaccount.com",
+  "client_id": "111992190582414583086",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/webmaster-service-account%40pledge-tracker-spdcalpoly.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
