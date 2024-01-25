@@ -25,7 +25,7 @@ df = pd.DataFrame(data)
 marks = defaultdict(lambda: {'white': 0, 'black': 0})
 for _, row in df.iterrows():
     # Use the correct column names as per your Google Sheet
-    if row.get('Submission Password', '').lower() == 'patience' and row.get('Approved?', '').lower() == 'yes':
+    if row.get('Submission Password', '').lower() == 'oopsilon' and row.get('Approved?', '').lower() == 'yes':
         names = row['Which pledge is this for?'].split(', ')
         mark_type = 'white' if row['What type of mark?'] == 'White' else 'black'
         for name in names:
