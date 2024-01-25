@@ -47,6 +47,6 @@ selected_name = st.selectbox('Select a name to view details', [''] + list(marks.
 if selected_name:
     # Filter for detailed info based on the selected name
     detailed_info = df[(df['Which pledge is this for?'].str.contains(selected_name, case=False)) & 
-                       (df['Submission Password'].str.lower() == 'patience')]
+                       (df['Submission Password'].str.lower() == 'oopsilon')]
     detailed_info.index = ["" for _ in detailed_info.index]
     st.dataframe(detailed_info[['Timestamp', 'Which brother is submitting this?', 'Description', 'What type of mark?', 'How many?']])
