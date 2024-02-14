@@ -25,7 +25,7 @@ df = pd.DataFrame(data)
 marks = defaultdict(lambda: {'white': 0, 'black': 0})
 for _, row in df.iterrows():
     # Use the correct column names as per your Google Sheet
-    if row.get('Submission Password', '').lower() == 'oopsilon' and row.get('Approved?', '').lower() == 'yes':
+    if row.get('Submission Password', '').lower() == '2013' and row.get('Approved?', '').lower() == 'yes':
         names = row['Which pledge is this for?'].split(', ')
         mark_type = 'white' if row['What type of mark?'] == 'White' else 'black'
         for name in names:
@@ -47,6 +47,6 @@ selected_name = st.selectbox('Select a name to view details', [''] + list(marks.
 if selected_name:
     # Filter for detailed info based on the selected name
     detailed_info = df[(df['Which pledge is this for?'].str.contains(selected_name, case=False)) & 
-                       (df['Submission Password'].str.lower() == 'oopsilon')]
+                       (df['Submission Password'].str.lower() == '2013')]
     detailed_info.index = ["" for _ in detailed_info.index]
     st.dataframe(detailed_info[['Timestamp', 'Which brother is submitting this?', 'Description', 'What type of mark?', 'How many?']])
