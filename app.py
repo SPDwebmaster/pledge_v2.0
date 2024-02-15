@@ -21,11 +21,18 @@ sheet = client.open('Upsilon Pledge Submission (Responses)').sheet1  # Use your 
 data = sheet.get_all_records()
 df = pd.DataFrame(data)
 
+# Fetch the submission password from Streamlit secrets
+submission_password = st.secrets["application_secrets"]["submission_password"]  # Adjusted to fetch password
+
 # Process and display data
 marks = defaultdict(lambda: {'white': 0, 'black': 0})
 for _, row in df.iterrows():
-    # Use the correct column names as per your Google Sheet
-    if row.get('Submission Password', '').lower() == '2013' and row.get('Approved?', '').lower() == 'yes':
+    # Directly compare the 'Submission Password' with the 'submission_password' from secrets
+    # Check if 'Submission Password' is numeric and compare as integers if so, else compare as strings
+    sheet_password = row.get('Submission Password', '')
+    if isinstance(sheet_password, (int, float)):
+        sheet_password = str(sheet_password)  # Convert numeric password to string for comparison
+    if sheet_password == submission_password and row.get('Approved?', '').lower() == 'yes':
         names = row['Which pledge is this for?'].split(', ')
         mark_type = 'white' if row['What type of mark?'] == 'White' else 'black'
         for name in names:
@@ -47,6 +54,6 @@ selected_name = st.selectbox('Select a name to view details', [''] + list(marks.
 if selected_name:
     # Filter for detailed info based on the selected name
     detailed_info = df[(df['Which pledge is this for?'].str.contains(selected_name, case=False)) & 
-                       (df['Submission Password'].str.lower() == '2013')]
+                       (df['Submission Password'] == submission_password)]  # Adjusted for direct comparison
     detailed_info.index = ["" for _ in detailed_info.index]
     st.dataframe(detailed_info[['Timestamp', 'Which brother is submitting this?', 'Description', 'What type of mark?', 'How many?']])
