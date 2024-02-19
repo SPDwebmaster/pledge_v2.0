@@ -52,8 +52,8 @@ st.dataframe(display_df, use_container_width=True)
 # Interactive selection for detailed view
 selected_name = st.selectbox('Select a name to view details', [''] + list(marks.keys()))
 if selected_name:
-    # Filter for detailed info based on the selected name
-    detailed_info = df[(df['Which pledge is this for?'].str.contains(selected_name, case=False)) & 
-                       (df['Submission Password'] == submission_password)]  # Adjusted for direct comparison
+    # Adjusted filter logic for detailed info based on the selected name
+    detailed_info = df[df.apply(lambda row: selected_name.lower().strip() in [name.lower().strip() for name in row['Which pledge is this for?'].split(', ')] and 
+                                str(row['Submission Password']).strip() == str(submission_password).strip(), axis=1)]
     detailed_info.index = ["" for _ in detailed_info.index]
     st.dataframe(detailed_info[['Timestamp', 'Which brother is submitting this?', 'Description', 'What type of mark?', 'How many?']])
