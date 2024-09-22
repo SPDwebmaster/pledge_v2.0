@@ -17,7 +17,7 @@ creds = get_credentials()
 client = gspread.authorize(creds)
 
 # Open the Google Sheet and fetch data
-sheet = client.open('Upsilon Pledge Submission (Responses)').sheet1  # Use your actual sheet name
+sheet = client.open('Phi Pledge Submission (Responses)').sheet1  # Use your actual sheet name
 data = sheet.get_all_records()
 df = pd.DataFrame(data)
 
