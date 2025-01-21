@@ -30,7 +30,7 @@ try:
     ]
 
     # Open the Google Sheet and fetch data with expected headers
-    sheet = client.open('Phi Pledge Submission (Responses)').sheet1
+    sheet = client.open('Pledge Submission (Responses)').sheet1
     data = sheet.get_all_records(expected_headers=expected_headers)
     df = pd.DataFrame(data)
 
